@@ -146,3 +146,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'nicelhage@gmail.com'
 EMAIL_HOST_PASSWORD = 'Nic12345'
 EMAIL_USE_TLS = 'TRUE'
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
